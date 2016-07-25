@@ -1,7 +1,21 @@
 <h1>Fuel Station Results</h1>
 
-<ul>
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Fuel Types</th>
+    <th>Distance (mi)</th>
+    <th>Access Times</th>
+  </tr>
+
   <% @stations.each do |station| %>
-    <li><%= station.station_name %></li>
+    <tr>
+      <td><%= station.station_name %></td>
+      <td><%= station.street_address %></td>
+      <td><%= station.fuel_type_code %></td>
+      <td><%= station.distance %></td>
+      <td><%= station.access_days_time %></td>
+    </tr>
   <% end %>
-</ul>
+</table>
