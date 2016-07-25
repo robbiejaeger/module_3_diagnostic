@@ -1,3 +1,3 @@
-## README
+# README
 
-# module_3_diagnostic
+## module_3_diagnostic
